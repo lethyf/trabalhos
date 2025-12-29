@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mundo Virtuais - Second Life</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Mundo Virtuais</h1>
+            <p>Um estudo conceptual inspirado no Second Life</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#identidade">Identidade</a></li>
+                <li><a href="#narrativa">Narrativa</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
+                <li><a href="#metaverso">Metaverso</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="inicio">
+                <h2>Introdução</h2>
+                <p>
+                    Este site apresenta uma interpretação conceptual dos mundos virtuais,
+                    inspirada no Second Life, com foco nos pilares da identidade, narrativa
+                    e comunidade.
+                </p>
+            </section>
+
+            <section id="identidade">
+                <h2>Identidade</h2>
+                <p>
+                    Nos mundos virtuais como o Second Life, a identidade não se resume à aparência
+                    visual, mas inclui o nome, o papel assumido pelo utilizador e a forma como Este
+                    se apresenta à comunidade.
+                </p>
+
+                <label for="username">Nome do avatar:</label>
+                <input type="text" id="username" placeholder="Escolhe um nome"><br><br>
+
+                <label for="perfil">Tipo de identidade:</label><br>
+                <select id="perfil">
+                    <option value="">— Seleciona um perfil —</option>
+                    <option value="explorador">Explorador</option>
+                    <option value="criador">Criador</option>
+                    <option value="social">Social</option>
+                    <option value="observador">Observador</option>
+                </select><br><br>
+
+                <button onclick="guardarIdentidade()">Guardar identidade</button>
+
+                <p id="identidadeGuardada"></p>
+            </section>
+
+            <section id="narrativa">
+                <h2>Narrativa</h2>
+                <p>
+                    Ao contrário dos jogos tradicionais, a narrativa em mundos virtuais
+                    emerge das interacções entre os utilizadores.
+                </p>
+            </section>
+
+            <section id="comunidade">
+                <h2>Comunidade</h2>
+                <p>
+                    A comunidade é formada por grupos de utilizadores que partilham espaços,
+                    regras sociais e práticas culturais dentro do mundo virtual.
+                </p>
+            </section>
+
+            <section id="metaverso">
+                <h2>Metaverso</h2>
+                <p>
+                    O Second Life é frequentemente referido como um precursor do conceito
+                    de Metaverso, devido à sua persistência e economia baseada em conteúdos
+                    criados pelos utilizadores.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Trabalho Final - Mundo Virtuais</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
