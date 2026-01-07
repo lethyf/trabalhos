@@ -57,23 +57,37 @@
 
                 <button onclick="guardarIdentidade()">Guardar identidade</button>
 
-                <p id="identidadeGuardada"></p>
+                <p id="identidadeGuardada"></p> 
             </section>
 
             <section id="narrativa">
                 <h2>Narrativa</h2>
                 <p>
-                    Ao contrário dos jogos tradicionais, a narrativa em mundos virtuais
-                    emerge das interacções entre os utilizadores.
+                    Nos mundos virtuais, a narrativa emerge das interações e escolhas dos
+                    utilizadores, em vez de seguir uma história pré-definida.
                 </p>
+
+                <p><strong>Situação:</strong> O avatar entra num espaço social do mundo virtual.</p>
+
+                <button onclick="escolhaNarrativa('evento')">Participar num evento</button>
+                <button onclick="escolhaNarrativa('observar')">Observar a interação</button>
+                <button onclick="escolhaNarrativa('criar')">Criar algo novo</button>
+
+                <p id="resultadoNarrativa"> </p>
             </section>
 
             <section id="comunidade">
                 <h2>Comunidade</h2>
                 <p>
-                    A comunidade é formada por grupos de utilizadores que partilham espaços,
-                    regras sociais e práticas culturais dentro do mundo virtual.
+                    A comunidade é formada pelas contribuições dos utilizadores e pelas
+                    interações que permanecem no mundo virtual.
                 </p>
+
+                <label for="mensagem">Deixa uma mensagem para o mundo:</label><br>
+                <input type="text" id="mensagem">
+                <button onclick="guardarMensagem()">Publicar</button>
+
+                <ul id="mensagensComunidade"></ul>
             </section>
 
             <section id="metaverso">
@@ -83,6 +97,11 @@
                     de Metaverso, devido à sua persistência e economia baseada em conteúdos
                     criados pelos utilizadores.
                 </p>
+            </section>
+
+            <section id="historico">
+                <h2>Histórico de ações</h2>
+                <ul id="listaAcoes"></ul>
             </section>
 
         </main>
